@@ -6,7 +6,7 @@ resetButton.textContent = "Reset";
 resetButton.addEventListener('click', function() {
     let n = prompt("Enter a number between 1 and 100");
     if (n < 1 || n > 100) {
-        alert("Invalid input. Please enter a number between 1 and 100");
+        alert("Invalid input. Enter a number between 1 and 100");
     } else {
         container.innerHTML = "";
         createGrid(n);
@@ -40,10 +40,8 @@ function createGrid(n) {
     document.body.appendChild(container);
 }
 
-// Function to create the initial grid with a default value of 16
 function initializeGrid() {
     createGrid(16);
 }
 
-// Call the function to initialize the grid
 initializeGrid();
